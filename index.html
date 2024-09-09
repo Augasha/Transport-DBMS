@@ -3,9 +3,42 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Register & Login</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+
 </head>
 <body>
-    
+    <div class="container" id="signup">
+        <h1 class="form-tittle">Register</h1>
+        <form method="post" action="">
+            <div class="input-group">
+                <i class="fas fa-user"></i>
+                <input type="text" name="First name" id="Fname" required>
+                <label for="Fname">First name</label>
+            </div>
+            <div class="input-group">
+                <i class="fas fa-user"></i>
+                <input type="text" name="Last name" id="Lname" required>
+                <label for="Lname">Last name</label>
+            </div>
+            <div class="input-group">
+                <i class="fas fa-envelope"></i>
+                <input type="email" name="email" id="email" required>
+                <label for="email">Email</label>
+            </div>
+            <div class="input-group">
+                <i class="fas fa-lock"></i>
+                <input type="password" name="password" id="password" required>
+                <label for="password">Password</label>
+            </div>
+            <div class="input-group">
+                <i class="fas fa-lock"></i>
+                <input type="password" name="password" id="password" required>
+                <label for="password">Confirm Password</label>
+            </div>
+            <button type="submit" class="submit-btn">Submit</button>
+            <p>Already have an account? <a href="index.html">Login</a></p>
+        </form>
+    </div>
 </body>
 </html>
