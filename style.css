@@ -68,6 +68,15 @@
     margin-right: 5px;
 }
 
-.user p{
-    
+.user{
+    align-items: center;
+    margin: 1rem 0;
 }
+
+.user p{
+    color: #fff;
+    font-size: .9rem;
+    font-weight: 500;
+    pointer-events: none;
+}
+
