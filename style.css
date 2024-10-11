@@ -22,3 +22,43 @@
     padding: .4rem .8rem;
     transition: all 0.5s ease;
 }
+
+.sidebar.active ~ .main-content{
+    left: 250px;
+    width: calc(100% - 250px);
+}
+
+.sidebar.active{
+    width: 250px;
+}
+
+.sidebar #Btn{
+    position: absolute;
+    color: #fff;
+    top: 1rem;
+    left: 50%;
+    font-size: 1.2rem;
+    line-height: 50px;
+    transform: translateX(-50%);
+    cursor: pointer;
+}
+
+.sidebar.active #Btn{
+    left: 90%;
+}
+
+.sidebar .top .logo{
+    color: #fff;
+    display: flex;
+    height: 50px;
+    width: 100%;
+    align-items: center;
+    opacity: 0;
+    pointer-events: none;
+    opacity: 0;
+}
+
+.sidebar.active .top .logo{
+    opacity: 1;
+    pointer-events: auto;
+}
